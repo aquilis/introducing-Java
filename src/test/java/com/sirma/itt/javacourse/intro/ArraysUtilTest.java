@@ -16,8 +16,16 @@ public class ArraysUtilTest {
 	 * array.
 	 */
 	@Test(expected = NullPointerException.class)
-	public final void testEmpty() {
+	public final void testEmptyMinElement() {
 		ArraysUtil.getMinElement(null);
+	}
+	
+	/**
+	 * Test if the method throws the proper excpetion when we input a null
+	 * array.
+	 */
+	@Test(expected = NullPointerException.class)
+	public final void testEmptySum() {
 		ArraysUtil.getSum(null);
 	}
 

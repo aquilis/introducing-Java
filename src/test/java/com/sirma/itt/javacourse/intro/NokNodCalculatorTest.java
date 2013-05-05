@@ -15,8 +15,15 @@ public class NokNodCalculatorTest {
 	 * We except Illegal argument exception when we input zeros.
 	 */
 	@Test (expected = IllegalArgumentException.class)
-	public void testZeros() {
+	public void testNodZeros() {
 		System.out.println(NokNodCalculator.findNod(0, 0));
+	}
+	
+	/**
+	 * We except Illegal argument exception when we input zeros.
+	 */
+	@Test (expected = IllegalArgumentException.class)
+	public void testNokZeros() {
 		System.out.println(NokNodCalculator.findNok(0, 0));
 	}
 	
